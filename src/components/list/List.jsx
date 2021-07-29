@@ -3,7 +3,7 @@ import {
   ArrowForwardIosOutlined,
 } from "@material-ui/icons";
 import { useRef, useState } from "react";
-// import ListItem from "../listItem/ListItem";
+import ListItem from "../listItem/ListItem";
 import "./list.scss";
 
 export default function List() {
@@ -31,9 +31,9 @@ export default function List() {
         <ArrowBackIosOutlined
           className="sliderArrow left"
           onClick={() => handleClick("left")}
-          style={{ display: !isMoved && "none" }}
+          // style={{ display: !isMoved && "none" }}
         />
-        {/* <div className="container" ref={listRef}>
+        <div className="container" ref={listRef}>
           <ListItem index={0} />
           <ListItem index={1} />
           <ListItem index={2} />
@@ -44,7 +44,7 @@ export default function List() {
           <ListItem index={7} />
           <ListItem index={8} />
           <ListItem index={9} />
-        </div> */}
+        </div>
         <ArrowForwardIosOutlined
           className="sliderArrow right"
           onClick={() => handleClick("right")}
